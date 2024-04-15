@@ -53,7 +53,7 @@ def reconhecedor(entrada, estado_inicial, transicoes, estados_finais):
                 caminho.append((estado_atual))
             else:
                 # se não houver transição definida para este caracter de entrada, a palavra não é aceite
-                return False, caminho, f"símbolo '{char}' não pertence ao alfabeto"
+                return False, caminho, f"símbolo '{char}' não é acessível a partir do estado {estado_atual}"
         else:
             return False, caminho, f"símbolo '{char}' não pertence ao alfabeto"
 
@@ -78,7 +78,7 @@ def main():
 
     if args.reconhecer:
         palavra = args.reconhecer
-        resultado, caminho, mensagem = reconhecedor(palavra, automato["estado_inicial"], automato["transicoes"], automato["estados_finais"])
+        resultado, caminho, mensagem = reconhecedor(palavra, automato["q0"], automato["delta"], automato["F"])
         if resultado:
             print(f"A palavra '{palavra}' é aceite pelo automato.")
             print(f"Caminho: {caminho}")
