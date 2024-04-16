@@ -1,8 +1,6 @@
 import json
 import argparse
 from graphviz import Digraph
-
-# automato : dict = {}
  
 # Lê a definição do autômato a partir de um arquivo JSON e retorna a definição como um dicionário.
 def ler_automato(nome_arquivo):
