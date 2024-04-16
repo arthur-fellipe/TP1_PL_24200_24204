@@ -1,8 +1,7 @@
 import json
 import argparse
-import sys
 
-contador_estados = 1
+contador_estados : int = 1
 
 def novo_estado():
     global contador_estados
