@@ -1,0 +1,48 @@
+{
+    "op": "alt",
+    "args": [
+        {
+            "simb": "a"
+        },
+        {
+            "op": "seq",
+            "args": [
+                {
+                    "simb": "a"
+                },
+                {
+                    "op": "kle",
+                    "args": [
+                        {
+                            "simb": "b"
+                        }
+                    ]
+                },
+                {
+                    "simb": "c"
+                },
+                {
+                    "op": "plus",
+                    "args": [
+                        {
+                            "simb": "d"
+                        },
+                        {
+                            "simb": "e"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "op": "kle",
+            "args": [
+                {
+                    "simb": "f"
+                }
+            ]
+        }
+    ]
+}
+
+
